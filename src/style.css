@@ -6,28 +6,28 @@ html {
 }
 
 body {
-  color: #444;
-  font-family: 'Open Sans', sans-serif;
+  color: #ccc;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   line-height: 1.5em;
   padding: 1em;
   margin: auto;
   max-width: 52em;
-  background: #fefefe;
+  background: #111111;
 }
 
 a {
-  color: #0645ad;
+  color: #0f65af;
   text-decoration: none;
 }
 
 a:visited {
-  color: #0b0080;
+  color: #6b40f0;
 }
 
 a:hover {
-  color: #06e;
-  cursor:pointer;
+  color: #07e;
+  cursor: pointer;
 }
 
 a:active {
@@ -44,23 +44,13 @@ a:active {
 }
 
 ::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #000;
+  background: rgba(0, 125, 250, 0.3);
+  color: white;
 }
 
 ::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #000;
-}
-
-a::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
-}
-
-a::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
+  background: rgba(0, 125, 250, 0.3);
+  color: white;
 }
 
 p {
@@ -78,7 +68,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  color: #111;
+  color: white;
   line-height: 1em;
 }
 
@@ -113,7 +103,7 @@ h6 {
 }
 
 blockquote {
-  color: #666666;
+  color: #333333;
   margin: 0;
   padding-left: 3em;
   border-left: 0.5em #eee solid;
@@ -132,7 +122,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   font-size: 0.98em;
 }
 
@@ -140,7 +130,7 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
-  background-color: #eee;
+  background-color: #333;
   padding: 10px 15px;
 }
 
@@ -216,7 +206,7 @@ td {
     font-size: 14px;
   }
   .logo {
-      max-height: 30px
+    max-height: 30px;
   }
 }
 
@@ -225,17 +215,17 @@ td {
     font-size: 16px;
   }
   .logo {
-      max-height: 40px;
+    max-height: 40px;
   }
   article {
-      margin: 50px 0;
+    margin: 50px 0;
   }
 }
 
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
+    color: white !important;
     filter: none !important;
     -ms-filter: none !important;
   }
@@ -272,7 +262,7 @@ td {
 
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #333;
     padding-right: 1em;
     page-break-inside: avoid;
   }
@@ -307,60 +297,60 @@ td {
   }
 }
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
 }
 nav ul li {
-    /* This allow us to arrange list items in a row, without using float */
-    display: inline-block;
-    list-style-type: none;
+  /* This allow us to arrange list items in a row, without using float */
+  display: inline-block;
+  list-style-type: none;
 }
 /* Create a style for the first level items */
 nav > div > ul > li > a {
-    color: #333 !important;
-    display: block;
-    line-height: 2em;
-    padding: 0.5em 0em;
-    text-decoration: none;
+  color: #333 !important;
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 0em;
+  text-decoration: none;
 }
 
 nav > div.nav-right > ul > li > a {
-    padding: 0.5em 0.5em;
+  padding: 0.5em 0.5em;
 }
 
 nav > div > ul > li > a:hover {
-    color: #aaa !important;
+  color: #aaa !important;
 }
 .nav-left {
-    float: left;
+  float: left;
 }
 
 .nav-left ul li {
-    float: left;
+  float: left;
 }
 
 .nav-right ul li {
-    float: right;
+  float: right;
 }
 .logo {
-    margin-right: 0.5em
+  margin-right: 0.5em;
 }
 article img {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 p.date {
-    font-size: 13px;
-    color: #666;
+  font-size: 13px;
+  color: #666;
 }
 ul.articles {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 #Articles {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 footer {
-    font-size: 13px;
+  font-size: 13px;
 }
