@@ -1,4 +1,4 @@
-# Creating a blog with a POSIX ssg and Github pages
+﻿# Creating a blog with a POSIX ssg and Github pages
 
 ###### September 22, 2020
 
@@ -11,7 +11,7 @@ Ssg is self described as "a static site generator written in shell. Optionally i
 ![ssg4-source](https://www.romanzolotarev.com/ssg4.png)
 *image of the sgg4 source code*
 
-It's very lightweight and easy to use, as said earlier it's completly written in shell script
+It's very lightweight and easy to use, as said earlier it's completely written in shell script
 
 ## How do I use ssg5 and how do I use it?
 
@@ -38,10 +38,10 @@ First thing to note, Github requires to have your site either in the `/` or the 
 
 So you have to make sure ssg5 exports to `/docs` as `/` is obviously not viable
 
-You can facilitate building with a [makefile](https://makefiletutorial.com/), you can reference [mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile) as a *poorly concieved* example
+You can facilitate building with a [makefile](https://makefiletutorial.com/), you can reference [mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile) as a *poorly conceived* example
 
 # You're done!
 
 ![mysite](images/mainpage.png)
 
-After this you can add some css to the site ([here's mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css)) and add something like a `.htaccess` file so you can get a clean adress bar
+After this you can add some css to the site ([here's mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css)) and add something like a `.htaccess` file so you can get a clean address bar (no file extension)
