@@ -1,0 +1,67 @@
+<html>
+  <link rel="stylesheet" href="style.css" />
+  <title>antaxiom's site</title>
+  <nav class="menu">
+    <div class="nav-left">
+      <ul>
+        <li>
+          <a href="index.html"
+            ><img class="logo" src="favicon.png" alt="" />antaxiom's blog</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <ul>
+        <li><a href="https://github.com/antaxiom">github</a></li>
+        <li><a href="https://antaxiom.github.io/about">about</a></li>
+      </ul>
+    </div>
+  </nav>
+</html>
+<h1 id="Creating%20a%20blog%20with%20a%20POSIX%20ssg%20and%20Github%20pages">Creating a blog with a POSIX ssg and Github pages</h1>
+
+<h6 id="September%2022,%202020">September 22, 2020</h6>
+
+<h2 id="What%20is%20ssg?">What is ssg?</h2>
+
+<p>Ssg is self described as &#8220;a static site generator written in shell. Optionally it converts Markdown files to HTML with lowdown(1) or Markdown.pl&#8221;</p>
+
+<p><img src="https://www.romanzolotarev.com/ssg4.png" alt="ssg4-source" />
+<em>image of the sgg4 source code</em></p>
+
+<p>It&#39;s very lightweight and easy to use, as said earlier it&#39;s completly written in shell script</p>
+
+<h2 id="How%20do%20I%20use%20ssg5%20and%20how%20do%20I%20use%20it?">How do I use ssg5 and how do I use it?</h2>
+
+<p>Using ssg is pretty simple but I&#39;d rather not explain it here so I&#39;ll leave some links
+<a href="https://www.romanzolotarev.com/ssg.html">The author&#39;s official page and guide</a>
+<a href="https://www.youtube.com/watch?v=N_ttw2Dihn8">Wolfgang&#39;s Video on the subject</a></p>
+
+<h2 id="ssg5%20modifications">ssg5 modifications</h2>
+
+<p>Wolfgang has made a <a href="https://notthebe.ee/src/ssg5">modified version</a> which he explains <a href="https://www.youtube.com/watch?v=N_ttw2Dihn8">in his video</a></p>
+
+<p>Now the problem with this version is that it doesn&#39;t work on Linux (and probably other unix systems) since <a href="https://stackoverflow.com/questions/43171648/sed-gives-sed-cant-read-no-such-file-or-directory">cut is a bit different</a> on MacOS</p>
+
+<p><a href="https://raw.githubusercontent.com/antaxiom/antaxiom.github.io/master/bin/ssg5">My version</a> has a check so it should work on both MacOS and Linux</p>
+
+<h2 id="Github%20pages%20integration">Github pages integration</h2>
+
+<p>This is where I come in, 
+since I don&#39;t have my own server I decided to use Github pages as means of hosting my site</p>
+
+<p>First thing to note, Github requires to have your site either in the <code>&#47;</code> or the <code>docs&#47;</code> folder of your repo</p>
+
+<p><img src="images/github-pages-picker.png" alt="github-pages-picker" /></p>
+
+<p>So you have to make sure ssg5 exports to <code>&#47;docs</code> as <code>&#47;</code> is obviously not viable</p>
+
+<p>You can facilitate building with a <a href="https://makefiletutorial.com/">makefile</a>, you can reference <a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile">mine</a> as a <em>poorly concieved</em> example</p>
+
+<h1 id="You&amp;#39;re%20done!">You&#39;re done!</h1>
+
+<p><img src="images/mainpage.png" alt="mysite" /></p>
+
+<p>After this you can add some css to the site (<a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css">here&#39;s mine</a>) and add something like a <code>.htaccess</code> file so you can get a clean adress bar</p>
+
