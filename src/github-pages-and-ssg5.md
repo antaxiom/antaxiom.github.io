@@ -8,10 +8,16 @@
 
 Ssg is self described as "a static site generator written in shell. Optionally it converts Markdown files to HTML with lowdown(1) or Markdown.pl"
 
-![ssg4-source](https://www.romanzolotarev.com/ssg4.png)
-*image of the sgg4 source code*
+It's written by a fellow called [Roman Zolotarev](https://www.romanzolotarev.com/)
 
-It's very lightweight and easy to use, as said earlier it's completely written in shell script
+![ssg4-source](https://www.romanzolotarev.com/ssg4.png)
+*image of the sgg4 source code as featured on roman's site*
+
+It's very lightweight and easy to use, and as said earlier it's completely written in shell script
+
+## Why should I use a script instead of a full static site generator?
+
+Most static site generators are unecesarily heavy with a lot of features you won't need especially for the purposes of a small site like mine
 
 ## How do I use ssg5 and how do I use it?
 
@@ -38,10 +44,10 @@ First thing to note, Github requires to have your site either in the `/` or the 
 
 So you have to make sure ssg5 exports to `/docs` as `/` is obviously not viable
 
-You can facilitate building with a [makefile](https://makefiletutorial.com/), you can reference [mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile) as a *poorly conceived* example
+You can facilitate building with a [makefile](https://makefiletutorial.com/), you can reference [mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile) as a example of what *not* to do
 
 # You're done!
 
-![mysite](images/mainpage.png)
+The site you're looking at right here was made using this exact method (could you tell?) if you want to look into some of the source feel free, it's available [here](https://github.com/antaxiom/antaxiom.github.io)
 
-After this you can add some css to the site ([here's mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css)) and add something like a `.htaccess` file so you can get a clean address bar (no file extension)
+After this you can add some css to the site ([here's mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css)) and add something like a `.htaccess` file so you can get a clean address bar 

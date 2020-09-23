@@ -1,20 +1,20 @@
 <html>
   <link rel="stylesheet" href="style.css" />
   <title>antaxiom's site</title>
+  <link rel="icon" href="favicon.png">
   <nav class="menu">
     <div class="nav-left">
       <ul>
         <li>
-          <a href="https://antaxiom.github.io"
-            ><img class="logo" src="favicon.png" alt="" />antaxiom's blog</a
-          >
+          <a href="/">
+            <img class="logo" src="favicon.png" alt="" />antaxiom's blog</a>
         </li>
       </ul>
     </div>
     <div class="nav-right">
       <ul>
-        <li><a href="https://github.com/antaxiom">github</a></li>
-        <li><a href="https://antaxiom.github.io/about">about</a></li>
+        <li><a href="https://github.com/antaxiom" target="_blank">github</a></li>
+        <li><a href="about">about</a></li>
       </ul>
     </div>
   </nav>
@@ -27,10 +27,16 @@
 
 <p>Ssg is self described as &#8220;a static site generator written in shell. Optionally it converts Markdown files to HTML with lowdown(1) or Markdown.pl&#8221;</p>
 
-<p><img src="https://www.romanzolotarev.com/ssg4.png" alt="ssg4-source" />
-<em>image of the sgg4 source code</em></p>
+<p>It&#39;s written by a fellow called <a href="https://www.romanzolotarev.com/">Roman Zolotarev</a></p>
 
-<p>It&#39;s very lightweight and easy to use, as said earlier it&#39;s completely written in shell script</p>
+<p><img src="https://www.romanzolotarev.com/ssg4.png" alt="ssg4-source" />
+<em>image of the sgg4 source code as featured on roman&#39;s site</em></p>
+
+<p>It&#39;s very lightweight and easy to use, and as said earlier it&#39;s completely written in shell script</p>
+
+<h2 id="Why%20should%20I%20use%20a%20script%20instead%20of%20a%20full%20static%20site%20generator?">Why should I use a script instead of a full static site generator?</h2>
+
+<p>Most static site generators are unecesarily heavy with a lot of features you won&#39;t need especially for the purposes of a small site like mine</p>
 
 <h2 id="How%20do%20I%20use%20ssg5%20and%20how%20do%20I%20use%20it?">How do I use ssg5 and how do I use it?</h2>
 
@@ -57,11 +63,11 @@ since I don&#39;t have my own server I decided to use Github pages as means of h
 
 <p>So you have to make sure ssg5 exports to <code>&#47;docs</code> as <code>&#47;</code> is obviously not viable</p>
 
-<p>You can facilitate building with a <a href="https://makefiletutorial.com/">makefile</a>, you can reference <a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile">mine</a> as a <em>poorly conceived</em> example</p>
+<p>You can facilitate building with a <a href="https://makefiletutorial.com/">makefile</a>, you can reference <a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile">mine</a> as a example of what <em>not</em> to do</p>
 
 <h1 id="You&amp;#39;re%20done!">You&#39;re done!</h1>
 
-<p><img src="images/mainpage.png" alt="mysite" /></p>
+<p>The site you&#39;re looking at right here was made using this exact method (could you tell?) if you want to look into some of the source feel free, it&#39;s available <a href="https://github.com/antaxiom/antaxiom.github.io">here</a></p>
 
-<p>After this you can add some css to the site (<a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css">here&#39;s mine</a>) and add something like a <code>.htaccess</code> file so you can get a clean address bar (no file extension)</p>
+<p>After this you can add some css to the site (<a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css">here&#39;s mine</a>) and add something like a <code>.htaccess</code> file so you can get a clean address bar </p>
 
