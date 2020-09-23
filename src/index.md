@@ -1,3 +1,4 @@
+<title>antaxiom's sit </title>
 # antaxiom's blog
 
 ---
@@ -6,4 +7,4 @@ Welcome to my blog (without any blogs) I'll write here from time to time wheneve
 
 ## All my blog posts are available here:
 
-[How to make a site using a shell script and Github pages](github-pages-and-ssg5) 
+[How to make a site using a shell script and Github pages](github-pages-and-ssg5) --- September 22, 2020

@@ -1,3 +1,4 @@
+<title>about</title>
 # About
 
 ### Interests:
@@ -10,6 +11,6 @@
 
 ### Contacts:
 
-Don't really have many places where you can contact me but I have a github for now
+Don't really have many places where you can contact me but I'll add these as I get more
 
-- [github](https://github.com/antaxiom)
+- [ ithub](https://github.com/antaxiom)

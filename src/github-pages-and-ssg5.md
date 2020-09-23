@@ -1,8 +1,7 @@
-﻿# Creating a blog with a POSIX ssg and Github pages
+﻿<title>Creating a blog with a POSIX ssg and Github pages</title>
+# Creating a blog with a POSIX ssg and Github pages
 
 ###### September 22, 2020
-
-
 
 ## What is ssg?
 
@@ -11,18 +10,21 @@ Ssg is self described as "a static site generator written in shell. Optionally i
 It's written by a fellow called [Roman Zolotarev](https://www.romanzolotarev.com/)
 
 ![ssg4-source](https://www.romanzolotarev.com/ssg4.png)
-*image of the sgg4 source code as featured on roman's site*
+*image of the sgg4 source code as featured on Roman's site*
+<br /><br />
 
 It's very lightweight and easy to use, and as said earlier it's completely written in shell script
 
 ## Why should I use a script instead of a full static site generator?
 
-Most static site generators are unecesarily heavy with a lot of features you won't need especially for the purposes of a small site like mine
+Most static site generators are unecesarily heavy with a lot of features you won't need, especially for the purposes of a small site like mine
 
-## How do I use ssg5 and how do I use it?
+## How do I use ssg5?
 
-Using ssg is pretty simple but I'd rather not explain it here so I'll leave some links
+Using ssg is pretty simple but I don't think I'm fit for the task of explaining the exact use cases so I'll leave some useful links here:
+
 [The author's official page and guide](https://www.romanzolotarev.com/ssg.html)
+
 [Wolfgang's Video on the subject](https://www.youtube.com/watch?v=N_ttw2Dihn8)
 
 ## ssg5 modifications
