@@ -13,13 +13,13 @@ body {
   line-height: 1.5em;
   padding: 1.25em;
   margin: auto;
-  max-width: 56em;
   background: #111111;
 }
 
 a {
   color: #61afef;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 a:visited {
@@ -357,7 +357,6 @@ footer {
   font-size: 14px;
 }
 
-
 /* RESET */
 a {
   background-color: transparent;
@@ -366,7 +365,6 @@ a:active,
 a:hover {
   outline: 0;
 }
-
 
 /* UNDERLINE EFFECT */
 a {
@@ -395,4 +393,35 @@ a:visited::after {
 a:hover::after {
   width: 99%;
   background-color: #50fa7b;
+}
+
+@media only screen and (max-width: 480px) {
+  a,
+  p,
+  .title {
+    font-size: 80%;
+  }
+  .logo {
+    max-width: 40px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  a,
+  p,
+  .title {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .body {
+    max-width: 60em;
+  }
+
+  a,
+  p,
+  .title {
+    font-size: 120%;
+  }
 }
