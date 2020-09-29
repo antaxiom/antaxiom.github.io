@@ -417,12 +417,17 @@ a:hover::after {
 }
 
 @media only screen and (min-width: 992px) {
+
   body {
     max-width: 60em;
+  }
+  @media (min-aspect-ratio: 18/9) {
+    body {
+      max-width: 75em;
+    }
   }
 
   p,
   .title {
     font-size: 120%;
   }
-}
