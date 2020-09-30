@@ -382,7 +382,7 @@ a:link::after {
   width: 1rem;
   background-color: #61afef;
   position: absolute;
-  bottom: -0.2rem;
+  bottom: -0.16rem;
   left: 0;
 }
 
@@ -403,6 +403,9 @@ a:hover::after {
   }
   .logo {
     max-width: 32px;
+  }
+  a:link::after {
+    bottom: -0.135rem;
   }
 }
 
