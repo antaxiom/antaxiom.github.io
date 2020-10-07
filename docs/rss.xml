@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<atom:link href="" rel="self" type="application/rss+xml" />
+<title>title</title>
+<description>antaxiom&#39;s site</description>
+<link>/</link>
+<lastBuildDate>Wed, 07 Oct 2020 13:45:36 -0400</lastBuildDate>
+
+<item>
+<guid>/</guid>
+<link>/</link>
+<pubDate>Wed, 07 Oct 2020 13:45:36 -0400</pubDate>
+<title>antaxiom&#39;s blog</title>
+<description><![CDATA[
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Description"
+      content="antaxiom's website for computer content"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="nav-left">
+        <ul>
+          <li>
+            <a href="/">
+              <img class="logo" src="/favicon.png" alt="" />antaxiom's blog</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="https://github.com/antaxiom" rel="noopener" target="_blank"
+              >github</a
+            >
+          </li>
+          <li><a href="/about">about</a></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
+<p><title>antaxiom&#39;s site</title></p>
+
+<h1 id="antaxiom&amp;#39;s%20blog">antaxiom&#39;s blog</h1>
+
+<hr/>
+
+<p>Welcome to my blog, I&#39;ll write here from time to time whenever I feel like, feel free to suggest anything to add by making an issue on this <a href="https://github.com/antaxiom/antaxiom.github.io">page&#39;s repo</a></p>
+
+<h2 id="All%20my%20blog%20posts%20are%20available%20here:">All my blog posts are available here:</h2>
+
+<p><em>in order of release</em></p>
+
+<p><a href="/github-pages-and-ssg5">How to make a site using a shell script and Github pages</a> &#8212; September 22, 2020</p>
+
+</body>
+</html>
+
+]]></description>
+</item>
+</channel></rss>
