@@ -1,9 +1,9 @@
-./style.css
 ./index.md
-./github-pages-and-ssg5.md
 ./favicon.ico
+./style.css
+./about.md
+./favicon.png
+./test.md
+./github-pages-and-ssg5.md
 ./images/github-pages-picker.png
 ./images/mainpage.png
-./favicon.png
-./about.md
-./test.md
