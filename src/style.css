@@ -1,3 +1,4 @@
+
 tml {
   font-size: 100%;
   overflow-y: scroll;
@@ -336,18 +337,20 @@ nav > div > ul > li > a:hover {
 }
 
 .nav-left ul li {
+  margin-left: 0.5em;
   float: left;
 }
 
 .nav-right ul li {
   float: right;
+  margin-right: 0.5em;
 }
 .logo {
   margin-right: 0.5em;
 }
 .menu {
-  margin-top: 0.45em;
-  margin-bottom: 0.45em;
+  padding-top: 0.5em;
+  padding-bottom: 0.35em;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.25), 0 1px 10px 0 rgba(0, 0, 0, 0.23), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
   border-bottom-left-radius: 0.35em;
   border-bottom-right-radius: 0.35em;
