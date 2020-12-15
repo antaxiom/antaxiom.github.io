@@ -255,13 +255,13 @@ render_article_list() {
 	for i in $1; do
 		if ! echo $i | grep -Eq "index|contact"; then
 			url="$i"
-			page_title=$(head -n 1 "$4/${i%\.html}.md" | cut -c 3-) 
+			page_title=$(head -n 1 "$4/${i%\.html}.md" | cut -c 3-)
 			item="<li><a href="\"${url}\"">${page_title}</a></li>"
 			items=$items$item
 		fi
 	done
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
+if [ "$OS" = 'Darwin' ]; then
 	sed -i '' -e "s|</article>|<ul class="articles">${items}</ul></article>|g" "$3/index.html"
 else
 	sed -i -e "s|</article>|<ul class="articles">${items}</ul></article>|g" "$3/index.html"

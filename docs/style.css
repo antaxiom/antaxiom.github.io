@@ -11,7 +11,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   line-height: 1.5em;
-  padding: 1.25em;
+  padding-bottom: 1.25em;
   padding-left: 1.75em;
   padding-right: 1.75em;
   max-width: 100%;
@@ -26,16 +26,16 @@ a {
 }
 
 a:visited {
-  color: #c678dd;
+  color: #e06ccd;
 }
 
 a:hover {
-  color: #50fa7b;
+  color: #55ee82;
   cursor: pointer;
 }
 
 a:active {
-  color: #faa700;
+  color: #dfbf60;
 }
 
 a:focus {
@@ -83,7 +83,7 @@ h6 {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 h2 {
@@ -116,10 +116,10 @@ blockquote {
 hr {
   display: block;
   border: 0;
-  border-top: 1px solid #6fb8f4;
-  border-bottom: 1px solid #61afef;
-  margin: 1em 0;
+  border-top: 3px solid #6fb8f4;
+  margin: 0.85em 0;
   padding: 0;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25), 0 1px 10px 0 rgba(0, 0, 0, 0.23), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
 }
 
 pre,
@@ -128,13 +128,16 @@ kbd,
 samp {
   font-family: "Fira Code", monospace;
   font-size: 0.98em;
+  background-color: #191919;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
 }
 
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
-  background-color: #333;
+  background-color: #191919;
   padding: 10px 15px;
 }
 
@@ -162,7 +165,7 @@ mark {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 90%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -210,7 +213,7 @@ td {
     font-size: 14px;
   }
   .logo {
-    max-height: 30px;
+    max-height: 35px;
   }
 }
 
@@ -219,7 +222,7 @@ td {
     font-size: 16px;
   }
   .logo {
-    max-height: 40px;
+    max-height: 45px;
   }
   article {
     margin: 50px 0;
@@ -342,6 +345,15 @@ nav > div > ul > li > a:hover {
 .logo {
   margin-right: 0.5em;
 }
+.menu {
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.25), 0 1px 10px 0 rgba(0, 0, 0, 0.23), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: 0.35em;
+  border-bottom-right-radius: 0.35em;
+  overflow: hidden;
+  background-color: #141414;
+}
 article img {
   margin: 1em 0;
 }
@@ -434,5 +446,5 @@ a:hover::after {
 
   p,
   .title {
-    font-size: 120%;
+    font-size: 110%;
   }

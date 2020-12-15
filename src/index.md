@@ -1,3 +1,5 @@
+<meta property="og:title" content="antaxiom's site" />
+<meta property="title" content="antaxiom's site" />
 <title>antaxiom's site</title>
 # antaxiom's blog
 
@@ -10,3 +12,5 @@ Welcome to my blog, I'll write here from time to time whenever I feel like, feel
 _in order of release_
 
 [How to make a site using a shell script and Github pages](github-pages-and-ssg5) --- September 22, 2020
+
+[My Linux Ricing Jourmey: dwm](ricing-dwm) --- December 15, 2020

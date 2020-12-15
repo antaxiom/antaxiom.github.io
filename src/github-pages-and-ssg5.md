@@ -1,4 +1,6 @@
-﻿<title>Creating a blog with a POSIX ssg and Github pages</title>
+﻿<meta property="og:title" content="Creating a blog with a POSIX ssg and Github pages" />
+<meta property="title" content="Creating a blog with a POSIX ssg and Github pages" />
+<title>Creating a blog with a POSIX ssg and Github pages</title>
 # Creating a blog with a POSIX ssg and Github pages
 
 ###### September 22, 2020
@@ -10,7 +12,7 @@ Ssg is self described as "a static site generator written in shell. Optionally i
 It's written by a fellow called [Roman Zolotarev](https://www.romanzolotarev.com/)
 
 ![ssg4-source](https://www.romanzolotarev.com/ssg4.png)
-*image of the sgg4 source code as featured on Roman's site*
+_image of the sgg4 source code as featured on Roman's site_
 <br /><br />
 
 It's very lightweight and easy to use, and as said earlier it's completely written in shell script
@@ -37,7 +39,7 @@ Now the problem with this version is that it doesn't work on Linux (and probably
 
 ## Github pages integration
 
-This is where I come in, 
+This is where I come in,
 since I don't have my own server I decided to use Github pages as means of hosting my site
 
 First thing to note, Github requires to have your site either in the `/` or the `docs/` folder of your repo
@@ -46,10 +48,10 @@ First thing to note, Github requires to have your site either in the `/` or the 
 
 So you have to make sure ssg5 exports to `/docs` as `/` is obviously not viable
 
-You can facilitate building with a [makefile](https://makefiletutorial.com/), you can reference [mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile) as a example of what *not* to do
+You can facilitate building with a [makefile](https://makefiletutorial.com/), you can reference [mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile) as a example of what _not_ to do
 
 # You're done!
 
 The site you're looking at right here was made using this exact method (could you tell?) if you want to look into some of the source feel free, it's available [here](https://github.com/antaxiom/antaxiom.github.io)
 
-After this you can add some css to the site ([here's mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css)) and add something like a `.htaccess` file so you can get a clean address bar 
+After this you can add some css to the site ([here's mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css)) and add something like a `.htaccess` file so you can get a clean address bar

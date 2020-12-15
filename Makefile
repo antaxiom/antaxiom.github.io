@@ -2,7 +2,7 @@ output=docs
 
 
 make:
-	rm -rf $(output)	
+	rm -rf $(output)
 	mkdir $(output)
 	bin/ssg5 src docs 'antaxiom' 'https://antaxiom.github.io/'
 
@@ -13,5 +13,5 @@ push:
 	git push
 
 clean:
-	rm -rf $(output)	
+	rm -rf $(output)
 	mkdir $(output)
