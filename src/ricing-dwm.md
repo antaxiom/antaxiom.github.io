@@ -2,6 +2,8 @@
 <meta property="title" content="Ricing dwm" />
 <title>Ricing journey: dwm</title>
 
+###### December 15, 2020
+
 # How I riced dwm
 
 ## What is ricing / Window Managers
@@ -52,7 +54,7 @@ I definitely have lots of patches in my config and I don't use all of them anymo
 - **Attach Aside**
   - Makes it so new windows are a spawned as a stack window instead of the master (larger) window
 - **Autostart**
-  - Simple and sweet, runs a script located in `~/.dwm/autostart.sh`every time dwm starts
+  - Simple and sweet, runs a script located in `~/.dwm/autostart.sh` every time dwm starts
 - **Bar Height**
   - Another visual bar modification, lets me pick the high as I with
 - **Colorbar**

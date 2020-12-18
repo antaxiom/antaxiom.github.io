@@ -15,3 +15,9 @@ push:
 clean:
 	rm -rf $(output)
 	mkdir $(output)
+
+post:
+	@read -p "Enter Post Name: " name; \
+	cat src/templates/blog.md > src/$$name.md; \
+	nvim src/$$name.md
+

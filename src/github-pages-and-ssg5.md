@@ -50,7 +50,7 @@ So you have to make sure ssg5 exports to `/docs` as `/` is obviously not viable
 
 You can facilitate building with a [makefile](https://makefiletutorial.com/), you can reference [mine](https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile) as a example of what _not_ to do
 
-# You're done!
+## You're done!
 
 The site you're looking at right here was made using this exact method (could you tell?) if you want to look into some of the source feel free, it's available [here](https://github.com/antaxiom/antaxiom.github.io)
 
