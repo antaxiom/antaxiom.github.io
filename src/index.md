@@ -1,6 +1,7 @@
 <meta property="og:title" content="antaxiom's site" />
 <meta property="title" content="antaxiom's site" />
 <title>antaxiom's site</title>
+<script src="scripts/js/sort.js"></script>
 # antaxiom's blog
 
 ---

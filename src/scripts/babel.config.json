@@ -1,0 +1,14 @@
+{
+	"comments": false,
+	"auxiliaryCommentBefore": "* @author https://github.com/K4rakara/ ",
+	"presets": [
+		"@babel/preset-typescript",
+		[
+			"@babel/preset-env",
+			{
+				"targets": "since 2015 and cover 80%, Firefox ESR"
+			}
+		],
+		"babel-preset-minify"
+	]
+}
