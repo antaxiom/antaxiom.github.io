@@ -100,7 +100,8 @@ It isn't as fine controlled as manual tiling but in practice it is a lot more pr
 
 This rice looks like this
 
-![images/dwm-rice-1.png](dwm-rice-1)
+![dwm-rice](images/dwm-rice.png)
+- I must note that the rice is broken right now since I haven't used it in a while and my setup has changed a lot
 
 I use my colors that are based on onedark and some custom colors I picked with the help of others
 

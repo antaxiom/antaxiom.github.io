@@ -29,13 +29,28 @@ Using ssg is pretty simple but I don't think I'm fit for the task of explaining 
 
 [Wolfgang's Video on the subject](https://www.youtube.com/watch?v=N_ttw2Dihn8)
 
-## ssg5 modifications
+## My modifications
+
+### Ssg5
 
 Wolfgang has made a [modified version](https://notthebe.ee/src/ssg5) which he explains [in his video](https://www.youtube.com/watch?v=N_ttw2Dihn8)
 
-Now the problem with this version is that it doesn't work on Linux (and probably other unix systems) since [cut is a bit different](https://stackoverflow.com/questions/43171648/sed-gives-sed-cant-read-no-such-file-or-directory) on MacOS
+Now the problem with this version is that it doesn't work on *most* Linux (and other systems that use GNU cut) since [cut is a bit different](https://stackoverflow.com/questions/43171648/sed-gives-sed-cant-read-no-such-file-or-directory) on MacOS
 
 [My version](https://raw.githubusercontent.com/antaxiom/antaxiom.github.io/master/bin/ssg5) has a check so it should work on both MacOS and Linux
+
+## Makefile
+
+I'm currently in the process of adding templates for when I make blog posts to the site.
+I'm managing them using them makefile
+
+## Plans going forward
+
+I'm planning to write a bit more often on here and I want to add some minor optional Javascript
+
+Before you get scared I have no plans on **_BLOATING_** the site up, but I'd like some more features.
+Currently I'm working on getting a system for sorting and displaying all blog posts without me adding them into the `index.md` while also allowing you to sort by dates possibly categories (when I add those in the future)
+
 
 ## Github pages integration
 
