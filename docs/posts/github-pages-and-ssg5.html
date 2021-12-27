@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="theme-color" content="#61afef" />
+    <meta property="og:site_name" content="antaxiom's site" />
+    <meta property="site_name" content="antaxiom's site" />
+    <meta
+      name="description"
+      content="A site where I put all my computer content, among other stuff"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="nav-left">
+        <ul>
+          <li>
+            <a href="/"> <img class="logo" src="favicon.png" alt="" />antaxiom's blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="https://github.com/antaxiom" rel="noopener" target="_blank">github</a>
+          </li>
+          <li><a href="about">about</a></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
+
+<article>
+<h1 id="creating-a-blog-with-a-posix-ssg-and-github-pages">Creating a blog with a POSIX ssg and Github pages</h1>
+<h6 id="september-22-2020">September 22, 2020</h6>
+<h2 id="what-is-ssg">What is ssg?</h2>
+<p>Ssg is self described as “a static site generator written in shell. Optionally it converts Markdown files to HTML with lowdown(1) or Markdown.pl”</p>
+<p>It’s written by a fellow called <a href="https://www.romanzolotarev.com/">Roman Zolotarev</a></p>
+<p><img src="https://www.romanzolotarev.com/ssg4.png" alt="ssg4-source" /> <em>image of the sgg4 source code as featured on Roman’s site</em> <br /><br /></p>
+<p>It’s very lightweight and easy to use, and as said earlier it’s completely written in shell script</p>
+<h2 id="why-should-i-use-a-script-instead-of-a-full-static-site-generator">Why should I use a script instead of a full static site generator?</h2>
+<p>Most static site generators are unecesarily heavy with a lot of features you won’t need, especially for the purposes of a small site like mine</p>
+<h2 id="how-do-i-use-ssg5">How do I use ssg5?</h2>
+<p>Using ssg is pretty simple but I don’t think I’m fit for the task of explaining the exact use cases so I’ll leave some useful links here:</p>
+<p><a href="https://www.romanzolotarev.com/ssg.html">The author’s official page and guide</a></p>
+<p><a href="https://www.youtube.com/watch?v=N_ttw2Dihn8">Wolfgang’s Video on the subject</a></p>
+<h2 id="my-modifications">My modifications</h2>
+<h3 id="ssg5">Ssg5</h3>
+<p>Wolfgang has made a <a href="https://notthebe.ee/src/ssg5">modified version</a> which he explains <a href="https://www.youtube.com/watch?v=N_ttw2Dihn8">in his video</a></p>
+<p>Now the problem with this version is that it doesn’t work on <em>most</em> Linux (and other systems that use GNU cut) since <a href="https://stackoverflow.com/questions/43171648/sed-gives-sed-cant-read-no-such-file-or-directory">cut is a bit different</a> on MacOS</p>
+<p><a href="https://raw.githubusercontent.com/antaxiom/antaxiom.github.io/master/bin/ssg5">My version</a> has a check so it should work on both MacOS and Linux</p>
+<h2 id="makefile">Makefile</h2>
+<p>I’m currently in the process of adding templates for when I make blog posts to the site. I’m managing them using them makefile</p>
+<h2 id="plans-going-forward">Plans going forward</h2>
+<p>I’m planning to write a bit more often on here and I want to add some minor optional Javascript</p>
+<p>Before you get scared I have no plans on <strong><em>BLOATING</em></strong> the site up, but I’d like some more features. Currently I’m working on getting a system for sorting and displaying all blog posts without me adding them into the <code>index.md</code> while also allowing you to sort by dates possibly categories (when I add those in the future)</p>
+<h2 id="github-pages-integration">Github pages integration</h2>
+<p>This is where I come in, since I don’t have my own server I decided to use Github pages as means of hosting my site</p>
+<p>First thing to note, Github requires to have your site either in the <code>/</code> or the <code>docs/</code> folder of your repo</p>
+<figure>
+<img src="images/github-pages-picker.png" alt="github-pages-picker" /><figcaption aria-hidden="true">github-pages-picker</figcaption>
+</figure>
+<p>So you have to make sure ssg5 exports to <code>/docs</code> as <code>/</code> is obviously not viable</p>
+<p>You can facilitate building with a <a href="https://makefiletutorial.com/">makefile</a>, you can reference <a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile">mine</a> as a example of what <em>not</em> to do</p>
+<h2 id="youre-done">You’re done!</h2>
+<p>The site you’re looking at right here was made using this exact method (could you tell?) if you want to look into some of the source feel free, it’s available <a href="https://github.com/antaxiom/antaxiom.github.io">here</a></p>
+<p>After this you can add some css to the site (<a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css">here’s mine</a>) and add something like a <code>.htaccess</code> file so you can get a clean address bar</p>
+</article>
+
+<footer>
+</footer>
+</body>

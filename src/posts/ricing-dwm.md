@@ -1,6 +1,9 @@
-﻿<meta property="og:title" content="Ricing dwm" />
-<meta property="title" content="Ricing dwm" />
-<title>Ricing journey: dwm</title>
+﻿---
+title: How I riced dwm
+description: A bit of my linux ricing journey starting with dwm
+tags: linux ricing dwm productivity
+image: images/dwm-rice.png
+---
 
 ###### December 15, 2020
 

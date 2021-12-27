@@ -1,6 +1,7 @@
-<meta property="og:title" content="about antaxiom" />
-<meta property="title" content="about antaxiom" />
-<title>about</title>
+---
+title: about
+---
+
 # About
 
 ## Interests:

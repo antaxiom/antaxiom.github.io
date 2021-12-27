@@ -1,6 +1,12 @@
-﻿<meta property="og:title" content="Creating a blog with a POSIX ssg and Github pages" />
-<meta property="title" content="Creating a blog with a POSIX ssg and Github pages" />
-<title>Creating a blog with a POSIX ssg and Github pages</title>
+﻿---
+title: Creating a blog with a POSIX ssg and Github pages
+description: How I made this stupid blog I refuse to update
+date: 2020-09-22
+tags: ssg blog
+---
+
+
+
 # Creating a blog with a POSIX ssg and Github pages
 
 ###### September 22, 2020
