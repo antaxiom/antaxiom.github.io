@@ -5,7 +5,8 @@
 ./images/github-pages-picker.png
 ./images/mainpage.png
 ./index.md
-./style.css
 ./posts/github-pages-and-ssg5.md
 ./posts/ricing-dwm.md
+./css/style.css
+./index.html
 ./archive.html
