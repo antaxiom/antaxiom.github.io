@@ -1,0 +1,453 @@
+
+tml {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background-color: 151515;
+}
+
+body {
+  color: #ccc;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.75em;
+  padding-right: 1.75em;
+  max-width: 100%;
+  margin: auto;
+  background: #111111;
+}
+
+a {
+  color: #61afef;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a:visited {
+  color: #e06ccd;
+}
+
+a:hover {
+  color: #55ee82;
+  cursor: pointer;
+}
+
+a:active {
+  color: #dfbf60;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+::-moz-selection {
+  background: rgba(0, 125, 250, 0.3);
+  color: white;
+}
+
+::selection {
+  background: rgba(0, 125, 250, 0.3);
+  color: white;
+}
+
+p {
+  margin: 1em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: white;
+  line-height: 1em;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.15em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.05em;
+}
+
+h5 {
+  font-size: 0.95em;
+}
+
+h6 {
+  font-size: 0.9em;
+}
+
+blockquote {
+  color: #333333;
+  margin: 0;
+  padding-left: 3em;
+  border-left: 0.5em #eee solid;
+}
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 3px solid #6fb8f4;
+  margin: 0.85em 0;
+  padding: 0;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25), 0 1px 10px 0 rgba(0, 0, 0, 0.23), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: "Fira Code", monospace;
+  font-size: 0.98em;
+  background-color: #222222;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #222222;
+  padding: 10px 15px;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+sub,
+sup {
+  font-size: 90%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 2em;
+}
+
+li p:last-child {
+  margin: 0;
+}
+
+dd {
+  margin: 0 0 0 2em;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .logo {
+    max-height: 35px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .logo {
+    max-height: 45px;
+  }
+  article {
+    margin: 50px 0;
+  }
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: white !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    max-width: 100%;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid black;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #333;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page :left {
+    margin: 15mm 20mm 15mm 10mm;
+  }
+
+  @page :right {
+    margin: 15mm 10mm 15mm 20mm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: 111111;
+}
+nav ul li {
+  /* This allow us to arrange list items in a row, without using float */
+  display: inline-block;
+  list-style-type: none;
+}
+/* Create a style for the first level items */
+nav > div > ul > li > a {
+  color: #bbb !important;
+  display: block;
+  line-height: 2.5em;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+}
+
+nav > div.nav-right > ul > li > a {
+  padding: 0.5em 0.5em;
+}
+
+nav > div > ul > li > a:hover {
+  color: #ddd !important;
+}
+.nav-left {
+  float: left;
+}
+
+.nav-left ul li {
+  margin-left: 0.5em;
+  float: left;
+}
+
+.nav-right ul li {
+  float: right;
+  margin-right: 0.5em;
+}
+.logo {
+  margin-right: 0.5em;
+}
+.menu {
+  padding-top: 0.5em;
+  padding-bottom: 0.35em;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.25), 0 1px 10px 0 rgba(0, 0, 0, 0.23), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: 0.35em;
+  border-bottom-right-radius: 0.35em;
+  overflow: hidden;
+  background-color: #141414;
+}
+article img {
+  margin: 1em 0;
+}
+p.date {
+  font-size: 13px;
+  color: #666;
+}
+ul.articles {
+  list-style: none;
+  padding: 0;
+}
+#Articles {
+  margin-top: 2em;
+}
+footer {
+  font-size: 14px;
+}
+
+/* RESET */
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* UNDERLINE EFFECT */
+a {
+  position: relative;
+  -webkit-transition: color 400ms ease-in-out;
+  transition: color 400ms ease-in-out;
+}
+a:link::after {
+  content: " ";
+  -webkit-transition: background-color 400ms ease-in-out,
+    width 125ms ease-in-out;
+  transition: background-color 400ms ease-in-out, width 400ms ease-in-out;
+  height: 0.125rem;
+  width: 1rem;
+  background-color: #61afef;
+  position: absolute;
+  bottom: -0.16rem;
+  left: 0;
+}
+
+a:visited::after {
+  width: 99%;
+  background-color: #c678dd;
+}
+
+a:hover::after {
+  width: 99%;
+  background-color: #50fa7b;
+}
+
+@media only screen and (max-width: 480px) {
+  p,
+  .title {
+    font-size: 100%;
+  }
+  .logo {
+    max-width: 32px;
+  }
+  a:link::after {
+    bottom: -0.135rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  p,
+  .title {
+    font-size: 100%;
+  }
+  .body {
+    max-width: 60em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  body {
+    max-width: 60em;
+  }
+  @media (min-aspect-ratio: 18/9) {
+    body {
+      max-width: 75em;
+    }
+  }
+
+  p,
+  .title {
+    font-size: 110%;
+  }
