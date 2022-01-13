@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: antaxiom.github.io
-Token: 70ef61702a2598d6bfd1e482320cabfcc371c5a164af0d87ef4f0b405adca216
