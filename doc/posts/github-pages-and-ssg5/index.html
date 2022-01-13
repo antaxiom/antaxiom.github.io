@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Creating a blog with a POSIX ssg and Github pages :: antaxiom&#39;s Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Outdated blog post on how I made my old site (this is only here for preservation)" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://antaxiom.github.io/posts/github-pages-and-ssg5/" />
+
+
+
+
+<link rel="stylesheet" href="https://antaxiom.github.io/assets/style.css">
+
+  <link rel="stylesheet" href="https://antaxiom.github.io/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://antaxiom.github.io/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://antaxiom.github.io/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Creating a blog with a POSIX ssg and Github pages">
+<meta property="og:description" content="Outdated blog post on how I made my old site (this is only here for preservation)" />
+<meta property="og:url" content="https://antaxiom.github.io/posts/github-pages-and-ssg5/" />
+<meta property="og:site_name" content="antaxiom&#39;s Blog" />
+
+  <meta property="og:image" content="https://antaxiom.github.io/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-09-22 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    antaxiom
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">about</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://antaxiom.github.io/posts/github-pages-and-ssg5/">Creating a blog with a POSIX ssg and Github pages</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-09-22
+        
+      </span>
+    
+    
+      <span class="post-author">:: antaxiom</span>
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p><strong>Note, this is a really old blogpost and isn&rsquo;t really representative of my current workflow, this is here for preservation purposes only</strong></p>
+<h2 id="what-is-ssg">What is ssg?<a href="#what-is-ssg" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Ssg is self described as &ldquo;a static site generator written in shell. Optionally it converts Markdown files to HTML with lowdown(1) or Markdown.pl&rdquo;</p>
+<p>It&rsquo;s written by a fellow called <a href="https://www.romanzolotarev.com/">Roman Zolotarev</a></p>
+<p><img src="https://www.romanzolotarev.com/ssg4.png" alt="ssg4-source">
+<em>image of the sgg4 source code as featured on Roman&rsquo;s site</em>
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>It&rsquo;s very lightweight and easy to use, and as said earlier it&rsquo;s completely written in shell script</p>
+<h2 id="why-should-i-use-a-script-instead-of-a-full-static-site-generator">Why should I use a script instead of a full static site generator?<a href="#why-should-i-use-a-script-instead-of-a-full-static-site-generator" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Most static site generators are unecesarily heavy with a lot of features you won&rsquo;t need, especially for the purposes of a small site like mine</p>
+<h2 id="how-do-i-use-ssg5">How do I use ssg5?<a href="#how-do-i-use-ssg5" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Using ssg is pretty simple but I don&rsquo;t think I&rsquo;m fit for the task of explaining the exact use cases so I&rsquo;ll leave some useful links here:</p>
+<p><a href="https://www.romanzolotarev.com/ssg.html">The author&rsquo;s official page and guide</a></p>
+<p><a href="https://www.youtube.com/watch?v=N_ttw2Dihn8">Wolfgang&rsquo;s Video on the subject</a></p>
+<h2 id="my-modifications">My modifications<a href="#my-modifications" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="ssg5">Ssg5<a href="#ssg5" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Wolfgang has made a <a href="https://notthebe.ee/src/ssg5">modified version</a> which he explains <a href="https://www.youtube.com/watch?v=N_ttw2Dihn8">in his video</a></p>
+<p>Now the problem with this version is that it doesn&rsquo;t work on <em>most</em> Linux (and other systems that use GNU cut) since <a href="https://stackoverflow.com/questions/43171648/sed-gives-sed-cant-read-no-such-file-or-directory">cut is a bit different</a> on MacOS</p>
+<p><a href="https://raw.githubusercontent.com/antaxiom/antaxiom.github.io/master/bin/ssg5">My version</a> has a check so it should work on both MacOS and Linux</p>
+<h2 id="makefile">Makefile<a href="#makefile" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I&rsquo;m currently in the process of adding templates for when I make blog posts to the site.
+I&rsquo;m managing them using them makefile</p>
+<h2 id="plans-going-forward">Plans going forward<a href="#plans-going-forward" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I&rsquo;m planning to write a bit more often on here and I want to add some minor optional Javascript</p>
+<p>Before you get scared I have no plans on <strong><em>BLOATING</em></strong> the site up, but I&rsquo;d like some more features.
+Currently I&rsquo;m working on getting a system for sorting and displaying all blog posts without me adding them into the <code>index.md</code> while also allowing you to sort by dates possibly categories (when I add those in the future)</p>
+<h2 id="github-pages-integration">Github pages integration<a href="#github-pages-integration" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>This is where I come in,
+since I don&rsquo;t have my own server I decided to use Github pages as means of hosting my site</p>
+<p>First thing to note, Github requires to have your site either in the <code>/</code> or the <code>docs/</code> folder of your repo</p>
+<p><img src="images/github-pages-picker.png" alt="github-pages-picker"></p>
+<p>So you have to make sure ssg5 exports to <code>/docs</code> as <code>/</code> is obviously not viable</p>
+<p>You can facilitate building with a <a href="https://makefiletutorial.com/">makefile</a>, you can reference <a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile">mine</a> as a example of what <em>not</em> to do</p>
+<h2 id="youre-done">You&rsquo;re done!<a href="#youre-done" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>The site you&rsquo;re looking at right here was made using this exact method (could you tell?) if you want to look into some of the source feel free, it&rsquo;s available <a href="https://github.com/antaxiom/antaxiom.github.io">here</a></p>
+<p>After this you can add some css to the site (<a href="https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css">here&rsquo;s mine</a>) and add something like a <code>.htaccess</code> file so you can get a clean address bar</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://antaxiom.github.io/posts/ricing-dwm/">
+                <span class="button__icon">←</span>
+                <span class="button__text">How I riced dwm</span>
+            </a>
+        </span>
+        
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© 2022 antaxiom</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://antaxiom.github.io/assets/main.js"></script>
+<script src="https://antaxiom.github.io/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

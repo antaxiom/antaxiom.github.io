@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on antaxiom&#39;s Blog</title>
+    <link>https://antaxiom.github.io/posts/</link>
+    <description>Recent content in Posts on antaxiom&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2022</copyright>
+    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://antaxiom.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I riced dwm</title>
+      <link>https://antaxiom.github.io/posts/ricing-dwm/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://antaxiom.github.io/posts/ricing-dwm/</guid>
+      <description>Note, this is a really old blog post and isn&amp;rsquo;t really representative of my current workflow, this is here for preservation purposes only
+What is ricing / Window Managers Any attempt at me explaining this will probably cause more confusing, so I recommend you read this
+Back story i3wm was the first wm I ever used
+dwm was the second window manager I used after I (accidentally) formatted my Ubuntu partition</description>
+      <content>&lt;p&gt;&lt;strong&gt;Note, this is a really old blog post and isn&amp;rsquo;t really representative of my current workflow, this is here for preservation purposes only&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-is-ricing--window-managers&#34;&gt;What is ricing / Window Managers&lt;/h2&gt;
+&lt;p&gt;Any attempt at me explaining this will probably cause more confusing, so I recommend you read &lt;a href=&#34;https://www.reddit.com/r/unixporn/wiki/index&#34;&gt;this&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;back-story&#34;&gt;Back story&lt;/h3&gt;
+&lt;p&gt;i3wm was the first wm I ever used&lt;/p&gt;
+&lt;p&gt;dwm was the second window manager I used after I (accidentally) formatted my Ubuntu partition&lt;/p&gt;
+&lt;h2 id=&#34;suckless-software&#34;&gt;Suckless software&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://suckless.org/&#34;&gt;Suckless software&lt;/a&gt; is pretty interesting, it is based on very minimalist software&lt;/p&gt;
+&lt;p&gt;For it to be usable for basically anyone you&amp;rsquo;re going to need to patch the source code for basic functionality and rebuild, that&amp;rsquo;s the workflow for all suckless software&lt;/p&gt;
+&lt;p&gt;You can read about their philosophy &lt;a href=&#34;https://suckless.org/philosophy/&#34;&gt;here&lt;/a&gt;, I don&amp;rsquo;t think it&amp;rsquo;s all good, but some of the software is quite useful.&lt;/p&gt;
+&lt;h2 id=&#34;the-actual-rice&#34;&gt;The actual rice&lt;/h2&gt;
+&lt;p&gt;My rice with through many iterations but I&amp;rsquo;m just going to put what I more or less finished with here&lt;/p&gt;
+&lt;p&gt;I used these patches:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dwm-activetagindicatorbar-6.2.diff
+dwm-actualfullscreen-20191112-cb3f58a.diff
+dwm-attachaside-6.1.diff
+dwm-autostart-20200610-cb3f58a.diff
+dwm-bar-height-6.2.diff
+dwm-colorbar-6.2.diff
+dwm-fixborders-6.2.diff
+dwm-pertag-perseltag-6.2.diff
+dwm-rotatestack-20161021-ab9571b.diff
+dwm-vanitygaps-mod-6.2.diff
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I definitely have lots of patches in my config and I don&amp;rsquo;t use all of them anymore but I&amp;rsquo;ll summarize why I use each&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Active Tag Indicator&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Makes the top bar look nicer than the default one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Actual Full Screen&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Has a system for making windows full screen within another layout instead of other solutions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Attach Aside&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Makes it so new windows are a spawned as a stack window instead of the master (larger) window&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autostart&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Simple and sweet, runs a script located in &lt;code&gt;~/.dwm/autostart.sh&lt;/code&gt; every time dwm starts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bar Height&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Another visual bar modification, lets me pick the high as I with&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Colorbar&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Sets more color variables, so they are not shared (lets me make the bar background one solid color)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fixborders&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Odd patch I think should be upstream at this point, makes it so the borders render property with a compositor and some weird cases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pertag Perseltag&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Lets me have a different layout, master size and stack size, ect. on each tag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rotate Stack&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Lets me rotate a window through the stack, kind of regretful of using this patch but I can&amp;rsquo;t be bothered to change it&lt;/li&gt;
+&lt;li&gt;It didn&amp;rsquo;t do what I actually wanted which was to swap between two windows, it&amp;rsquo;s hard to explain but it moved the entire stack with it (which is what the rotating meant)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vanity Gaps (mod)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;This is an interesting one, it is a modification for vanity gaps that adds layouts that are written to work with the gaps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That was a very long list to write&lt;/p&gt;
+&lt;h3 id=&#34;other-tools-i-use-with-this&#34;&gt;Other tools I use with this&lt;/h3&gt;
+&lt;p&gt;I use a compositor (picom) and a bunch of other things in startup&lt;/p&gt;
+&lt;p&gt;I use dmenu as a launcher in combination with &lt;a href=&#34;https://github.com/enkore/j4-dmenu-desktop&#34;&gt;j4-dmenu-desktop&lt;/a&gt; to open .desktop files with dmenu&lt;/p&gt;
+&lt;p&gt;I use the default dwm bar and use i3blocks to set its contents&lt;/p&gt;
+&lt;p&gt;I have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clock&lt;/li&gt;
+&lt;li&gt;A &lt;code&gt;playerctl&lt;/code&gt; script (to see currently playing content)&lt;/li&gt;
+&lt;li&gt;And a script to show COVID cases where I live
+&lt;ul&gt;
+&lt;li&gt;(not showing this since it will date this post a lot)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;functionality&#34;&gt;Functionality&lt;/h3&gt;
+&lt;p&gt;Unlike my first wm, dwm is not manual&lt;/p&gt;
+&lt;p&gt;This means that placement is automatic, you don&amp;rsquo;t have to specify horizontal or vertical positioning&lt;/p&gt;
+&lt;p&gt;Instead you pick a layout which then defines where each window goes&lt;/p&gt;
+&lt;p&gt;It isn&amp;rsquo;t as fine controlled as manual tiling but in practice it is a lot more practical&lt;/p&gt;
+&lt;h3 id=&#34;visual-appearance&#34;&gt;Visual Appearance&lt;/h3&gt;
+&lt;p&gt;This rice looks like this&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/dwm-rice.png&#34; alt=&#34;dwm-rice&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I must note that the rice is broken right now since I haven&amp;rsquo;t used it in a while and my setup has changed a lot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I use my colors that are based on onedark and some custom colors I picked with the help of others&lt;/p&gt;
+&lt;p&gt;I affectionately call it Toodark since I get many complains about the insane contrast (with the background being &lt;code&gt;#111111&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;I use East Asian Characters (they&amp;rsquo;re not just Japanese!) for the tag numbers because anything else didn&amp;rsquo;t look as pretty&lt;/p&gt;
+&lt;p&gt;For the font I use JetBrains Mono (Nerd Font) it&amp;rsquo;s basically the font I use for all monospaced stuff&lt;/p&gt;
+&lt;h3 id=&#34;problems&#34;&gt;Problems&lt;/h3&gt;
+&lt;p&gt;dwm has some problems like any window manager&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not even talking about the suckless philosophy and patching&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m talking about something I don&amp;rsquo;t hear discussed nearly enough around windows mangers&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s about compatibility, it may seem like I’m nitpicking at points but I&amp;rsquo;ve had various issues like this before&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java applications not cooperating well (this affects quite a few things but it&amp;rsquo;s as easy as renaming the window manager to LG3D and or &lt;a href=&#34;https://wiki.archlinux.org/index.php/Dwm#Fixing_misbehaving_Java_applications&#34;&gt;this&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Windows not going where&amp;rsquo;d you expect, this is kind of specific but sometimes windows wanted to float when they shouldn&amp;rsquo;t but dwm has ok rules by default on this, future wms I discuss may not&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;For as painful as it looks to set up the config outside of patching is very painless and it&amp;rsquo;s a dead simple introduction to dynamic window managing&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Creating a blog with a POSIX ssg and Github pages</title>
+      <link>https://antaxiom.github.io/posts/github-pages-and-ssg5/</link>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://antaxiom.github.io/posts/github-pages-and-ssg5/</guid>
+      <description>Note, this is a really old blogpost and isn&amp;rsquo;t really representative of my current workflow, this is here for preservation purposes only
+What is ssg? Ssg is self described as &amp;ldquo;a static site generator written in shell. Optionally it converts Markdown files to HTML with lowdown(1) or Markdown.pl&amp;rdquo;
+It&amp;rsquo;s written by a fellow called Roman Zolotarev
+image of the sgg4 source code as featured on Roman&amp;rsquo;s site It&amp;rsquo;s very lightweight and easy to use, and as said earlier it&amp;rsquo;s completely written in shell script</description>
+      <content>&lt;p&gt;&lt;strong&gt;Note, this is a really old blogpost and isn&amp;rsquo;t really representative of my current workflow, this is here for preservation purposes only&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-is-ssg&#34;&gt;What is ssg?&lt;/h2&gt;
+&lt;p&gt;Ssg is self described as &amp;ldquo;a static site generator written in shell. Optionally it converts Markdown files to HTML with lowdown(1) or Markdown.pl&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s written by a fellow called &lt;a href=&#34;https://www.romanzolotarev.com/&#34;&gt;Roman Zolotarev&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.romanzolotarev.com/ssg4.png&#34; alt=&#34;ssg4-source&#34;&gt;
+&lt;em&gt;image of the sgg4 source code as featured on Roman&amp;rsquo;s site&lt;/em&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s very lightweight and easy to use, and as said earlier it&amp;rsquo;s completely written in shell script&lt;/p&gt;
+&lt;h2 id=&#34;why-should-i-use-a-script-instead-of-a-full-static-site-generator&#34;&gt;Why should I use a script instead of a full static site generator?&lt;/h2&gt;
+&lt;p&gt;Most static site generators are unecesarily heavy with a lot of features you won&amp;rsquo;t need, especially for the purposes of a small site like mine&lt;/p&gt;
+&lt;h2 id=&#34;how-do-i-use-ssg5&#34;&gt;How do I use ssg5?&lt;/h2&gt;
+&lt;p&gt;Using ssg is pretty simple but I don&amp;rsquo;t think I&amp;rsquo;m fit for the task of explaining the exact use cases so I&amp;rsquo;ll leave some useful links here:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.romanzolotarev.com/ssg.html&#34;&gt;The author&amp;rsquo;s official page and guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=N_ttw2Dihn8&#34;&gt;Wolfgang&amp;rsquo;s Video on the subject&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;my-modifications&#34;&gt;My modifications&lt;/h2&gt;
+&lt;h3 id=&#34;ssg5&#34;&gt;Ssg5&lt;/h3&gt;
+&lt;p&gt;Wolfgang has made a &lt;a href=&#34;https://notthebe.ee/src/ssg5&#34;&gt;modified version&lt;/a&gt; which he explains &lt;a href=&#34;https://www.youtube.com/watch?v=N_ttw2Dihn8&#34;&gt;in his video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now the problem with this version is that it doesn&amp;rsquo;t work on &lt;em&gt;most&lt;/em&gt; Linux (and other systems that use GNU cut) since &lt;a href=&#34;https://stackoverflow.com/questions/43171648/sed-gives-sed-cant-read-no-such-file-or-directory&#34;&gt;cut is a bit different&lt;/a&gt; on MacOS&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/antaxiom/antaxiom.github.io/master/bin/ssg5&#34;&gt;My version&lt;/a&gt; has a check so it should work on both MacOS and Linux&lt;/p&gt;
+&lt;h2 id=&#34;makefile&#34;&gt;Makefile&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m currently in the process of adding templates for when I make blog posts to the site.
+I&amp;rsquo;m managing them using them makefile&lt;/p&gt;
+&lt;h2 id=&#34;plans-going-forward&#34;&gt;Plans going forward&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m planning to write a bit more often on here and I want to add some minor optional Javascript&lt;/p&gt;
+&lt;p&gt;Before you get scared I have no plans on &lt;strong&gt;&lt;em&gt;BLOATING&lt;/em&gt;&lt;/strong&gt; the site up, but I&amp;rsquo;d like some more features.
+Currently I&amp;rsquo;m working on getting a system for sorting and displaying all blog posts without me adding them into the &lt;code&gt;index.md&lt;/code&gt; while also allowing you to sort by dates possibly categories (when I add those in the future)&lt;/p&gt;
+&lt;h2 id=&#34;github-pages-integration&#34;&gt;Github pages integration&lt;/h2&gt;
+&lt;p&gt;This is where I come in,
+since I don&amp;rsquo;t have my own server I decided to use Github pages as means of hosting my site&lt;/p&gt;
+&lt;p&gt;First thing to note, Github requires to have your site either in the &lt;code&gt;/&lt;/code&gt; or the &lt;code&gt;docs/&lt;/code&gt; folder of your repo&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/github-pages-picker.png&#34; alt=&#34;github-pages-picker&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So you have to make sure ssg5 exports to &lt;code&gt;/docs&lt;/code&gt; as &lt;code&gt;/&lt;/code&gt; is obviously not viable&lt;/p&gt;
+&lt;p&gt;You can facilitate building with a &lt;a href=&#34;https://makefiletutorial.com/&#34;&gt;makefile&lt;/a&gt;, you can reference &lt;a href=&#34;https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile&#34;&gt;mine&lt;/a&gt; as a example of what &lt;em&gt;not&lt;/em&gt; to do&lt;/p&gt;
+&lt;h2 id=&#34;youre-done&#34;&gt;You&amp;rsquo;re done!&lt;/h2&gt;
+&lt;p&gt;The site you&amp;rsquo;re looking at right here was made using this exact method (could you tell?) if you want to look into some of the source feel free, it&amp;rsquo;s available &lt;a href=&#34;https://github.com/antaxiom/antaxiom.github.io&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After this you can add some css to the site (&lt;a href=&#34;https://github.com/antaxiom/antaxiom.github.io/blob/master/src/style.css&#34;&gt;here&amp;rsquo;s mine&lt;/a&gt;) and add something like a &lt;code&gt;.htaccess&lt;/code&gt; file so you can get a clean address bar&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>How I riced dwm :: antaxiom&#39;s Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How I riced dwm, a linux window manager" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://antaxiom.github.io/posts/ricing-dwm/" />
+
+
+
+
+<link rel="stylesheet" href="https://antaxiom.github.io/assets/style.css">
+
+  <link rel="stylesheet" href="https://antaxiom.github.io/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://antaxiom.github.io/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://antaxiom.github.io/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How I riced dwm">
+<meta property="og:description" content="How I riced dwm, a linux window manager" />
+<meta property="og:url" content="https://antaxiom.github.io/posts/ricing-dwm/" />
+<meta property="og:site_name" content="antaxiom&#39;s Blog" />
+
+  <meta property="og:image" content="https://antaxiom.github.io/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-12-05 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    antaxiom
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">about</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://antaxiom.github.io/posts/ricing-dwm/">How I riced dwm</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-12-05
+        
+      </span>
+    
+    
+      <span class="post-author">:: antaxiom</span>
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p><strong>Note, this is a really old blog post and isn&rsquo;t really representative of my current workflow, this is here for preservation purposes only</strong></p>
+<h2 id="what-is-ricing--window-managers">What is ricing / Window Managers<a href="#what-is-ricing--window-managers" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Any attempt at me explaining this will probably cause more confusing, so I recommend you read <a href="https://www.reddit.com/r/unixporn/wiki/index">this</a></p>
+<h3 id="back-story">Back story<a href="#back-story" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>i3wm was the first wm I ever used</p>
+<p>dwm was the second window manager I used after I (accidentally) formatted my Ubuntu partition</p>
+<h2 id="suckless-software">Suckless software<a href="#suckless-software" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><a href="https://suckless.org/">Suckless software</a> is pretty interesting, it is based on very minimalist software</p>
+<p>For it to be usable for basically anyone you&rsquo;re going to need to patch the source code for basic functionality and rebuild, that&rsquo;s the workflow for all suckless software</p>
+<p>You can read about their philosophy <a href="https://suckless.org/philosophy/">here</a>, I don&rsquo;t think it&rsquo;s all good, but some of the software is quite useful.</p>
+<h2 id="the-actual-rice">The actual rice<a href="#the-actual-rice" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>My rice with through many iterations but I&rsquo;m just going to put what I more or less finished with here</p>
+<p>I used these patches:</p>
+<pre><code>dwm-activetagindicatorbar-6.2.diff
+dwm-actualfullscreen-20191112-cb3f58a.diff
+dwm-attachaside-6.1.diff
+dwm-autostart-20200610-cb3f58a.diff
+dwm-bar-height-6.2.diff
+dwm-colorbar-6.2.diff
+dwm-fixborders-6.2.diff
+dwm-pertag-perseltag-6.2.diff
+dwm-rotatestack-20161021-ab9571b.diff
+dwm-vanitygaps-mod-6.2.diff
+</code></pre><p>I definitely have lots of patches in my config and I don&rsquo;t use all of them anymore but I&rsquo;ll summarize why I use each</p>
+<ul>
+<li><strong>Active Tag Indicator</strong>
+<ul>
+<li>Makes the top bar look nicer than the default one</li>
+</ul>
+</li>
+<li><strong>Actual Full Screen</strong>
+<ul>
+<li>Has a system for making windows full screen within another layout instead of other solutions</li>
+</ul>
+</li>
+<li><strong>Attach Aside</strong>
+<ul>
+<li>Makes it so new windows are a spawned as a stack window instead of the master (larger) window</li>
+</ul>
+</li>
+<li><strong>Autostart</strong>
+<ul>
+<li>Simple and sweet, runs a script located in <code>~/.dwm/autostart.sh</code> every time dwm starts</li>
+</ul>
+</li>
+<li><strong>Bar Height</strong>
+<ul>
+<li>Another visual bar modification, lets me pick the high as I with</li>
+</ul>
+</li>
+<li><strong>Colorbar</strong>
+<ul>
+<li>Sets more color variables, so they are not shared (lets me make the bar background one solid color)</li>
+</ul>
+</li>
+<li><strong>Fixborders</strong>
+<ul>
+<li>Odd patch I think should be upstream at this point, makes it so the borders render property with a compositor and some weird cases</li>
+</ul>
+</li>
+<li><strong>Pertag Perseltag</strong>
+<ul>
+<li>Lets me have a different layout, master size and stack size, ect. on each tag</li>
+</ul>
+</li>
+<li><strong>Rotate Stack</strong>
+<ul>
+<li>Lets me rotate a window through the stack, kind of regretful of using this patch but I can&rsquo;t be bothered to change it</li>
+<li>It didn&rsquo;t do what I actually wanted which was to swap between two windows, it&rsquo;s hard to explain but it moved the entire stack with it (which is what the rotating meant)</li>
+</ul>
+</li>
+<li><strong>Vanity Gaps (mod)</strong>
+<ul>
+<li>This is an interesting one, it is a modification for vanity gaps that adds layouts that are written to work with the gaps</li>
+</ul>
+</li>
+</ul>
+<p>That was a very long list to write</p>
+<h3 id="other-tools-i-use-with-this">Other tools I use with this<a href="#other-tools-i-use-with-this" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>I use a compositor (picom) and a bunch of other things in startup</p>
+<p>I use dmenu as a launcher in combination with <a href="https://github.com/enkore/j4-dmenu-desktop">j4-dmenu-desktop</a> to open .desktop files with dmenu</p>
+<p>I use the default dwm bar and use i3blocks to set its contents</p>
+<p>I have</p>
+<ul>
+<li>Clock</li>
+<li>A <code>playerctl</code> script (to see currently playing content)</li>
+<li>And a script to show COVID cases where I live
+<ul>
+<li>(not showing this since it will date this post a lot)</li>
+</ul>
+</li>
+</ul>
+<h3 id="functionality">Functionality<a href="#functionality" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Unlike my first wm, dwm is not manual</p>
+<p>This means that placement is automatic, you don&rsquo;t have to specify horizontal or vertical positioning</p>
+<p>Instead you pick a layout which then defines where each window goes</p>
+<p>It isn&rsquo;t as fine controlled as manual tiling but in practice it is a lot more practical</p>
+<h3 id="visual-appearance">Visual Appearance<a href="#visual-appearance" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>This rice looks like this</p>
+<p><img src="images/dwm-rice.png" alt="dwm-rice"></p>
+<ul>
+<li>I must note that the rice is broken right now since I haven&rsquo;t used it in a while and my setup has changed a lot</li>
+</ul>
+<p>I use my colors that are based on onedark and some custom colors I picked with the help of others</p>
+<p>I affectionately call it Toodark since I get many complains about the insane contrast (with the background being <code>#111111</code>)</p>
+<p>I use East Asian Characters (they&rsquo;re not just Japanese!) for the tag numbers because anything else didn&rsquo;t look as pretty</p>
+<p>For the font I use JetBrains Mono (Nerd Font) it&rsquo;s basically the font I use for all monospaced stuff</p>
+<h3 id="problems">Problems<a href="#problems" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>dwm has some problems like any window manager</p>
+<p>I&rsquo;m not even talking about the suckless philosophy and patching</p>
+<p>I&rsquo;m talking about something I don&rsquo;t hear discussed nearly enough around windows mangers</p>
+<p>It&rsquo;s about compatibility, it may seem like I’m nitpicking at points but I&rsquo;ve had various issues like this before</p>
+<ul>
+<li>Java applications not cooperating well (this affects quite a few things but it&rsquo;s as easy as renaming the window manager to LG3D and or <a href="https://wiki.archlinux.org/index.php/Dwm#Fixing_misbehaving_Java_applications">this</a>)</li>
+<li>Windows not going where&rsquo;d you expect, this is kind of specific but sometimes windows wanted to float when they shouldn&rsquo;t but dwm has ok rules by default on this, future wms I discuss may not</li>
+</ul>
+<h3 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>For as painful as it looks to set up the config outside of patching is very painless and it&rsquo;s a dead simple introduction to dynamic window managing</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://antaxiom.github.io/posts/github-pages-and-ssg5/">
+                <span class="button__text">Creating a blog with a POSIX ssg and Github pages</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© 2022 antaxiom</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://antaxiom.github.io/assets/main.js"></script>
+<script src="https://antaxiom.github.io/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
