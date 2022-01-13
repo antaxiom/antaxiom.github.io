@@ -2,7 +2,7 @@ baseURL = "https://antaxiom.github.io/"
 languageCode = "en-us"
 title = "Antaxiom's blog"
 theme = "terminal"
-publishdir = "./doc/"
+publishdir = "./docs/"
 
 # Terminal theme settings
 

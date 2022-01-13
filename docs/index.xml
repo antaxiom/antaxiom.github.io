@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>antaxiom&#39;s Blog</title>
+    <title>antaxiom&#39;s blog</title>
     <link>https://antaxiom.github.io/</link>
-    <description>Recent content on antaxiom&#39;s Blog</description>
+    <description>Recent content on antaxiom&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2022</copyright>
-    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://antaxiom.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 18:39:32 -0400</lastBuildDate><atom:link href="https://antaxiom.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moving to Hugo</title>
+      <link>https://antaxiom.github.io/posts/moving-to-hugo/</link>
+      <pubDate>Wed, 12 Jan 2022 18:39:32 -0400</pubDate>
+      
+      <guid>https://antaxiom.github.io/posts/moving-to-hugo/</guid>
+      <description>So I finally gave up the static site script minimalism after breaking my site when I tried to change the script. So let&amp;rsquo;s embrace the so called &amp;ldquo;bloat&amp;rdquo; and move in.
+So I won&amp;rsquo;t really go into setting up Hugo because it&amp;rsquo;s stupid easy and this should really be all you need. Although there is no void linux package for hugo you can convert the debian package using xdeb or use a flatpak or snap if you&amp;rsquo;re into that.</description>
+      <content>&lt;p&gt;&lt;img src=&#34;https://antaxiom.github.io/img/hugo-logo.svg&#34; alt=&#34;hugo-logo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So I finally gave up the static site script minimalism after breaking my site when I tried to change the script. So let&amp;rsquo;s embrace the so called &amp;ldquo;bloat&amp;rdquo; and move in.&lt;/p&gt;
+&lt;p&gt;So I won&amp;rsquo;t really go into setting up Hugo because it&amp;rsquo;s stupid easy and &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;this&lt;/a&gt; should really be all you need. Although there is no void linux package for hugo you can convert the debian package using &lt;a href=&#34;https://github.com/toluschr/xdeb.git&#34;&gt;xdeb&lt;/a&gt; or use a flatpak or snap if you&amp;rsquo;re into that.&lt;/p&gt;
+&lt;p&gt;Hugo has a really nice live server so it&amp;rsquo;s easy to edit things once you&amp;rsquo;re set up.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m using the &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/&#34;&gt;Terminal&lt;/a&gt; theme at the moment, but I will probably either edit it or switch to another theme in the future&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve copied over my old horrible irrelevant blog posts and such plus my about page, so there&amp;rsquo;s no real info lost.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>How I riced dwm</title>
       <link>https://antaxiom.github.io/posts/ricing-dwm/</link>
@@ -117,7 +134,7 @@ dwm-vanitygaps-mod-6.2.diff
 &lt;p&gt;It isn&amp;rsquo;t as fine controlled as manual tiling but in practice it is a lot more practical&lt;/p&gt;
 &lt;h3 id=&#34;visual-appearance&#34;&gt;Visual Appearance&lt;/h3&gt;
 &lt;p&gt;This rice looks like this&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;images/dwm-rice.png&#34; alt=&#34;dwm-rice&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://antaxiom.github.io/img/dwm-rice.png&#34; alt=&#34;dwm-rice&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I must note that the rice is broken right now since I haven&amp;rsquo;t used it in a while and my setup has changed a lot&lt;/li&gt;
 &lt;/ul&gt;
@@ -179,7 +196,7 @@ Currently I&amp;rsquo;m working on getting a system for sorting and displaying a
 &lt;p&gt;This is where I come in,
 since I don&amp;rsquo;t have my own server I decided to use Github pages as means of hosting my site&lt;/p&gt;
 &lt;p&gt;First thing to note, Github requires to have your site either in the &lt;code&gt;/&lt;/code&gt; or the &lt;code&gt;docs/&lt;/code&gt; folder of your repo&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;images/github-pages-picker.png&#34; alt=&#34;github-pages-picker&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://antaxiom.github.io/img/github-pages-picker.png&#34; alt=&#34;github-pages-picker&#34;&gt;&lt;/p&gt;
 &lt;p&gt;So you have to make sure ssg5 exports to &lt;code&gt;/docs&lt;/code&gt; as &lt;code&gt;/&lt;/code&gt; is obviously not viable&lt;/p&gt;
 &lt;p&gt;You can facilitate building with a &lt;a href=&#34;https://makefiletutorial.com/&#34;&gt;makefile&lt;/a&gt;, you can reference &lt;a href=&#34;https://github.com/antaxiom/antaxiom.github.io/blob/master/makefile&#34;&gt;mine&lt;/a&gt; as a example of what &lt;em&gt;not&lt;/em&gt; to do&lt;/p&gt;
 &lt;h2 id=&#34;youre-done&#34;&gt;You&amp;rsquo;re done!&lt;/h2&gt;
